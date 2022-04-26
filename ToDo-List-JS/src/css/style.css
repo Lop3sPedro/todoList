@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+button:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+input {
+  background: none;
+  border: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  overflow: hidden;
+}
+
+div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+div.container div.main-container div.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px;
+  width: 80vw;
+}
+
+div.container div.main-container div.header-container div#logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.container div.main-container div.header-container div#logo img {
+  padding-right: 16px;
+}
+
+div.container div.main-container div.header-container div.list {
+  margin-top: 16px;
+  height: auto;
+  padding: 24px;
+}
+
+div.container div.main-container div.header-container div.list .todo__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  -webkit-box-shadow: 1px 1px 5px #000;
+          box-shadow: 1px 1px 5px #000;
+}
+
+div.container div.main-container div.header-container select#filter {
+  padding: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3d82eb;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 5px 0px 5px 5px;
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+div.container div.main-container div.header-container select#filter option {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3d82eb;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+div.container div.main-container div.list {
+  margin-top: 16px;
+  height: auto;
+  padding: 24px;
+}
+
+div.container div.main-container div.list .todo-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  margin-bottom: 24px;
+}
+
+div.container div.main-container div.list .todo-item:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+div.container div.main-container div.list .todo-item > div {
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+div.container div.main-container div.list .todo-item input[type="checkbox"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+div.container div.main-container div.list .todo-item input[type="checkbox"]:checked + div {
+  text-decoration: line-through;
+}
+
+div.container div.main-container div#input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  margin-top: 16px;
+}
+
+div.container div.main-container div#input-container input {
+  font-family: "Roboto", sans-serif;
+  margin: 8px;
+}
+
+div.container div.main-container div#input-container input::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3d82eb;
+}
+
+div.container div.main-container div#input-container input:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3d82eb;
+}
+
+div.container div.main-container div#input-container input::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3d82eb;
+}
+
+div.container div.main-container div#input-container input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3d82eb;
+}
+/*# sourceMappingURL=style.css.map */
